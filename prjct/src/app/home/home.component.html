@@ -1,0 +1,62 @@
+<div [hidden]="showPage">
+    <div class="container" >
+        <div class="row">
+          <div class="col-xs-12">
+            <header>
+              <nav class="navbar ">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">
+                    <img src="/assets/images/olx_icon.jpg">
+                  </a>
+                  <div class="language">
+                    <span>Select Language</span>
+                    <ul class="select-lang ">
+                      <li class="select-lang ">
+                        <span>
+                          English
+                        </span>
+      
+                      </li>
+                      <li class="select-lang break">
+                        <span>
+                          Hindi
+                        </span>
+      
+                      </li>
+                    </ul>
+      
+                  </div>
+                  <span class="caption">India's Largest Marketplace</span>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="myaccount">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-user"></span>
+                      <span>
+                        <strong>My Account</strong>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="ad-submission">
+                    <a  (click)="hidenavpage()">
+                      <!-- <a routerLink="/submitAd" (click)="hidenavpage()"> -->
+                      
+                      <span>Submit a Free Ad</span>
+                    </a>
+                    
+                  </li>
+                </ul>
+              </nav>
+            </header>
+            
+      
+          </div>
+        </div>
+      
+      </div>
+</div>
+
+  <!-- <app-submit-ad ></app-submit-ad> -->
+<div [hidden]="!showPage">
+    <app-submit-ad ></app-submit-ad>
+</div>
